@@ -1,0 +1,32 @@
+---
+title: "Deliverable1"
+author: "ddd"
+date: "February 4, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Introduction
+
+A budding interest of mine is creating visualizations from various intersections of complex analytics and pop culture. Somewhere close to the center of American pop culture is the world of professional sports; and somewhere near the center of that world is the Super Bowl. The Super Bowl has grown to be a defining American event for football devotees and detractors alike-regardless of whether you care about the game, either the highlights, the halftime show, or the commercials find their way into your Monday water cooler conversations.
+ 
+#Problem Description
+
+During an otherwise underwhelming Super Bowl 50, a commercial made the (cute, but suspicious) claim that the cities of the Super Bowl winning team experience increased birth rates in the nine months or so following the Super Bowl win. It is a well-known national marketing fact that the greater part of the country tunes in to the Super Bowl, but the implications for a measurable effect at the city level are significant.
+
+There are both private and public considerations. For industry, perhaps there are increased opportunities for contraception sales close to the big game, or maybe increased demand for toys nine months later. From the government perspective, it seems that there ought to be an interest in building demand expectations for pre- and post-natal care in public facilities.
+
+This exploration will focus on implications for local hospitals. The analysis will serve as an investigation into the demand for pre- and post-natal care as a function of major sports league outcomes. When this relationship is well-understood, hospitals and other care facilities will be better equipped to deal with predictable fluctuations in demand.
+ 
+#Data
+
+The key dataset needed to complete the analysis is monthly, city-level births (or birth rates). This is a difficult dataset to come by given the granularity and privacy concerns. However, the CDC has published monthly births by state for the past five years. These data will be the main input to the analysis. It so happens that the major sports teams tend to call the largest city in their state "home". A reasonable proxy then for monthly birth rates by city is monthly birth rates by state. The assumption to maintain here is that the fluctuations at the state level follow the same patterns as those of the most populated city within the state.
+
+* __Note__: I have been in contact with the Census Bureau and the CDC regarding city-level data. Later refinement of this analysis might include the data should I receive it.
+
+#Success Criteria
+
+This analysis will explore connections between changes in birth rates and Super Bowl outcomes. Initial success in this exploration will have two dimensions: 1) determine if there is a link, and 2) quantify the magnitude of the link (convincingly). Further success will mean having a reliable model that can predict birth trends as a function of major sporting events generally.
