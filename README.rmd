@@ -21,12 +21,3 @@ There are both private and public considerations. For industry, perhaps there ar
 
 This exploration will focus on implications for local hospitals. The analysis will serve as an investigation into the demand for pre- and post-natal care as a function of major sports league outcomes. When this relationship is well-understood, hospitals and other care facilities will be better equipped to deal with predictable fluctuations in demand.
  
-#Data
-
-The key dataset needed to complete the analysis is monthly, city-level births (or birth rates). This is a difficult dataset to come by given the granularity and privacy concerns. However, the CDC has published monthly births by state for the past five years. These data will be the main input to the analysis. It so happens that the major sports teams tend to call the largest city in their state "home". A reasonable proxy then for monthly birth rates by city is monthly birth rates by state. The assumption to maintain here is that the fluctuations at the state level follow the same patterns as those of the most populated city within the state.
-
-* __Note__: I have been in contact with the Census Bureau and the CDC regarding city-level data. Later refinement of this analysis might include the data should I receive it.
-
-#Success Criteria
-
-This analysis will explore connections between changes in birth rates and Super Bowl outcomes. Initial success in this exploration will have two dimensions: 1) determine if there is a link, and 2) quantify the magnitude of the link (convincingly). Further success will mean having a reliable model that can predict birth trends as a function of major sporting events generally.
