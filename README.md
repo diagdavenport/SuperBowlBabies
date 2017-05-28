@@ -24,12 +24,12 @@ The chosen solution was a linear regression, modeling changes in the Q4 births r
 The results were emphatic and surprising, but perhaps more interesting as a result. The statistically significant coefficients were counterintuitive in both direction and magnitude. It turns out that there are two significant effects that need to be quantified separately when considering the effect of Super Bowls on births. The first is that the impact of participating in a Super Bowl generally causes a drag on birth rates later in that year; when teams participate in the Super Bowl, their cities should expect a decrease in birth rates relative to the same time last year. That is, unless they win. The second effect that gets parsed from the model is that, if the team wins, the increase in birth rates offsets the loss from participating—the net effect of winning the Super Bowl is effectively zero (as far as birth rates are concerned)!
 
 | First Header  | Second Header |
-| ------------- | ------------- |
+| ------------- | -------------------------- |
 | 12  | 23 |
 | Content Cell  | 43  |
 
 | Feature              |  Estimate  |  Std. Error |  T Value  |  Pr(>|t|)  |  Significance |
-| -------------------- | ---------- | ----------- | --------- | ---------- | ------------- |
+| --- | ---- | ---- | ----- | ----- | ------- |
 | participatedTRUE	   |  -0.03     |  0.01	      |  -2.24	  |  0.03	   |  **           |
 | wonTRUE	           |  0.03	    |  0.02	      |  1.70	  |  0.09	   |  *            |
 | GDP^1                |  0.06      |  0.04	      |  1.51     |  0.14	   |  NA           |
