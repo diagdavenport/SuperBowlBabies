@@ -2,7 +2,7 @@
 
 ## Objective
 
-For the past two years, commercials have suggested that the cities of the Super Bowl-winning team see a rise in births in the nine months or so following a Super Bowl win. This analysis seeks to statistically test that assertion and estimate the magnitude of the effect, if any.
+For the past two years, [commercials](https://www.youtube.com/watch?v=9KqekigARfE) have suggested that the cities of the Super Bowl-winning team see a rise in births in the nine months or so following a Super Bowl win. This analysis seeks to statistically test that assertion and estimate the magnitude of the effect, if any.
 
 ## Analysis
 
@@ -11,7 +11,8 @@ The second kind of aggregation was based on the dimension of time. I aggregated 
 
 Once the data were curated, the structure of the initial analysis was to compare two quantities: 1) the actual change in birth rates in the final months of the year, and 2) the expected change in birth rates for that period.  In cases where the actual change is greater than the expected change, we have validated that there is in fact an increase in births after a Super Bowl.
 
-It is worth noting that calculating changes in birth rates is a delicate matter. There is a temptation to evaluate the changes in consecutive months, but this approach is misguided given the consistent cycles throughout the year that we observe in the data. Changes, in this analysis, are evaluated relative to the same period in the previous year. This allows the model to ignore the periodicity in the data and focus on level changes in the cycle. The null hypothesis then is that changes in January births are similar to those for April. And that changes in April births are similar to those for November. By extension, the expectation is that the average change in birth rates outside of the post-Super Bowl period is similar to the average change within the period. The graphs available here indicate the differences between those averages and how they coincide with Super Bowl participation.
+It is worth noting that calculating changes in birth rates is a delicate matter. There is a temptation to evaluate the changes in consecutive months, but this approach is misguided given the consistent cycles throughout the year that we observe in the [data](References/Births, spectral content.pdf). Changes, in this analysis, are evaluated relative to the same period in the previous year. This allows the model to ignore the periodicity in the data and focus on level changes in the cycle. The null hypothesis then is that changes in January births are similar to those for April. And that changes in April births are similar to those for November. By extension, the expectation is that the average change in birth rates outside of the post-Super Bowl period is similar to the average change within the period. The graphs available [here](Analysis 1 Results/Year over year differences.pdf) indicate the differences between those averages and how they coincide with Super Bowl participation.
+
 This initial analysis reveals that there are indeed changes in birth rates that coincide with Super Bowl participation and victory, but the directions and magnitudes are not readily apparent by visual inspection. The next phase of the analysis was to take a more refined approach and attempt to rule out spurious correlations and potentially confounding variables.
 
 The chosen solution was a linear regression, modeling changes in the Q4 births rates as a function of:
@@ -23,23 +24,14 @@ The chosen solution was a linear regression, modeling changes in the Q4 births r
 
 The results were emphatic and surprising, but perhaps more interesting as a result. The statistically significant coefficients were counterintuitive in both direction and magnitude. It turns out that there are two significant effects that need to be quantified separately when considering the effect of Super Bowls on births. The first is that the impact of participating in a Super Bowl generally causes a drag on birth rates later in that year; when teams participate in the Super Bowl, their cities should expect a decrease in birth rates relative to the same time last year. That is, unless they win. The second effect that gets parsed from the model is that, if the team wins, the increase in birth rates offsets the loss from participating—the net effect of winning the Super Bowl is effectively zero (as far as birth rates are concerned)!
 
-| First Header  | Second Header |
-| ------------- | -------------------------- |
-| 12  | 23 |
-| Content Cell  | 43  |
 
 | Feature              |  Estimate  |  Std. Error  | Significance |
 | --- | ---- | ---- | ----- 
 | participatedTRUE	   |  -0.03     |  0.01	      |  **           |
 | wonTRUE	           |  0.03	    |  0.02	      |    *            |
-| GDP^1                |  0.06      |  0.04	      |    NA           |
-| GDP^2                |  -0.02	    |  0.04	      |   NA           |	 
-| GDP^3                |  -0.03	    |  0.04	      |    NA           |
-
-| Feature              |  Estimate  |  Std. Error |  T Value  |  Pr(>|t|)  |  Significance |
-| --- | ---- | ---- | ----- | ----- | ------- |
-| participatedTRUE	   |  -0.03     |  0.01	      |  -2.24	  |  0.03	   |  .09           |
-
+| GDP^1                |  0.06      |  0.04	      |               |
+| GDP^2                |  -0.02	    |  0.04	      |              |	 
+| GDP^3                |  -0.03	    |  0.04	      |               |
 
 Significance codes:  0.01 ‘**’ 0.05 ‘*’ 					
 
