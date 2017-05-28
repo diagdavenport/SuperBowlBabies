@@ -25,8 +25,8 @@ The results were emphatic and surprising, but perhaps more interesting as a resu
 
 | First Header  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| 12  | 23 |
+| Content Cell  | 43  |
 
 | Feature              |  Estimate  |  Std. Error |  T Value  |  Pr(>|t|)  |  Significance |
 | -------------------- | ---------- | ----------- | --------- | ---------- | ------------- |
