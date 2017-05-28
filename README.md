@@ -28,13 +28,13 @@ The results were emphatic and surprising, but perhaps more interesting as a resu
 | 12  | 23 |
 | Content Cell  | 43  |
 
-| Feature              |  Estimate  |  Std. Error |  T Value  |  Pr(>|t|)  |  Significance |
-| --- | ---- | ---- | ----- | ----- | ------- |
-| participatedTRUE	   |  -0.03     |  0.01	      |  -2.24	  |  0.03	   |  **           |
-| wonTRUE	           |  0.03	    |  0.02	      |  1.70	  |  0.09	   |  *            |
-| GDP^1                |  0.06      |  0.04	      |  1.51     |  0.14	   |  NA           |
-| GDP^2                |  -0.02	    |  0.04	      |  -0.68	  |  0.50      |  NA           |	 
-| GDP^3                |  -0.03	    |  0.04	      |  -0.79	  |  0.43	   |  NA           |
+| Feature              |  Estimate  |  Std. Error  | Significance |
+| --- | ---- | ---- | ----- 
+| participatedTRUE	   |  -0.03     |  0.01	      |  **           |
+| wonTRUE	           |  0.03	    |  0.02	      |    *            |
+| GDP^1                |  0.06      |  0.04	      |    NA           |
+| GDP^2                |  -0.02	    |  0.04	      |   NA           |	 
+| GDP^3                |  -0.03	    |  0.04	      |    NA           |
 
 | Feature              |  Estimate  |  Std. Error |  T Value  |  Pr(>|t|)  |  Significance |
 | --- | ---- | ---- | ----- | ----- | ------- |
