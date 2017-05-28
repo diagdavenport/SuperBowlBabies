@@ -36,6 +36,11 @@ The results were emphatic and surprising, but perhaps more interesting as a resu
 | GDP^2                |  -0.02	    |  0.04	      |  -0.68	  |  0.50      |  NA           |	 
 | GDP^3                |  -0.03	    |  0.04	      |  -0.79	  |  0.43	   |  NA           |
 
+| Feature              |  Estimate  |  Std. Error |  T Value  |  Pr(>|t|)  |  Significance |
+| --- | ---- | ---- | ----- | ----- | ------- |
+| participatedTRUE	   |  -0.03     |  0.01	      |  -2.24	  |  0.03	   |  .09           |
+
+
 Significance codes:  0.01 ‘**’ 0.05 ‘*’ 					
 
 ## Conclusions
